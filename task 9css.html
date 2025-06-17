@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>jesho</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 5fr 3fr;
+            grid-template-rows: 3fr 1fr 8fr 3fr;
+            width: 250px;
+            height: 250px;
+
+        }
+        .container>div{
+            display: flex;
+            align-items: center;
+            border: 3px;
+            
+        }
+        .head{
+          color:white;
+          background-color:#2F2D2E;
+         grid-column: 1/3;
+         justify-content: center;
+        }
+        .nav{
+          color:white;
+          background-color:#9B999A;
+          grid-column: 1/3;
+          grid-row:2/3
+        }
+        .bar{
+          background-color:#BCBABB;
+          grid-column: 2/3;
+          grid-row: 3/4;
+          justify-content: center;
+          margin-left:5px ;
+           margin-right:15px;
+           margin-top:5px;
+           margin-bottom:10px;
+        }
+        .main{
+          grid-column: 1/2;
+          grid-row:3/4;
+          background-color: #E0E0E0;
+          justify-content: center;
+           margin-left:15px ;
+           margin-right:5px;
+           margin-top:5px;
+           margin-bottom:10px;
+        }
+        .foot{
+          color:white;
+          background-color:#555555;
+          grid-column: 1/3;
+          justify-content: center;
+        }
+        
+        </style>
+    <div class="container">
+       
+        <div class="head">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="bar">Sidebar</div>
+        <div class="main">Main Content</div>
+        <div class="foot">Footer</div>
+        
+    </div>
+</body>
+</html>

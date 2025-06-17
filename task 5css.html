@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>jesho</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 2fr 3fr;
+            grid-template-rows: 2fr 1fr 2fr 4fr 2fr;
+            width:400px;
+            height: 250px;
+            background-color:#cccccc;
+            
+
+        }
+        .container>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+          color:white;
+          background-color:#333333;
+         grid-column: 1/2;
+          margin-left:30px;
+          margin-right:30px;
+        }
+        .nav{
+          color:white;
+          background-color:#666666;
+           margin-left:30px;
+          margin-right:30px;
+          grid-column: 1/4;
+         
+        }
+        .intro{
+          color:white;
+          background-color:#666666;
+          margin-top:10px;
+          margin-left:40px;
+          margin-right:40px;
+          grid-column: 1/4;
+         
+        }
+        
+        .area{
+          grid-column: 1/3;
+          grid-row:4/5;
+           margin-left:40px ;
+           margin-right:10px;
+           margin-top:10px;
+           margin-bottom:10px;
+           background-color: #333333;
+           color:white;
+        }
+        .bar{
+          grid-column: 3/4;
+          grid-row:4/5;
+           margin-left:10px ;
+           margin-right:40px;
+           margin-top:10px;
+           margin-bottom:10px;
+           background-color: #999999;
+           color:white;
+
+        }
+       .foot{
+          color:white;
+          background-color:#505050;
+          grid-column: 1/4;
+          margin-left:40px;
+          margin-right:40px;
+        }
+      
+        
+        </style>
+    <div class="container">
+       
+        <div class="title">Page title</div>
+        <div class="nav">Navigation</div>
+        <div class="intro">Introduction</div>
+        <div class="area">Main control area</div>
+        <div class="bar">sidebar</div>
+        <div class="foot">Footer</div>
+        
+    </div>
+</body>
+</html>

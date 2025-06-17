@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jesho</title>
+   
+  </head>
+  <body>
+    <style>
+      .container{
+        display:grid;
+        grid-template-columns:3fr 2fr ;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+        gap: 10px;
+        width:500px;
+        height:600px;
+        border: 2px solid black;
+        padding:3px;
+      }
+      .container>div
+      {
+      
+        display: flex;
+       justify-content: center; 
+       align-items:center;
+       border: 2px solid black;
+      }
+      .head,.nav,.footer{
+        grid-column:1/3;
+      }
+      .section{
+        grid-column: 1/2;
+        grid-row:3/4
+      }
+      .article{
+        grid-column:1/2;
+        grid-row: 4/5;
+      }
+      .aside{
+        grid-row:2/3;
+        grid-row:3/5;
+      }
+    </style>
+     <div class="container">
+       <div class="head">header</div>
+       <div class="nav">nav</div>
+       <div class="section">section</div>
+       <div class="aside">aside</div>
+       <div class="article">article</div>
+       <div class="footer">footer</div>
+     </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+   
+  </head>
+  <body>
+    <style>
+      .container{
+        display:grid;
+        grid-template-columns:3fr 4fr 4fr ;
+        grid-template-rows: 2fr 3fr 2fr;
+        padding:5px;
+        background-color:#1E82B4;
+        width:400px;
+        height:200px;
+        gap: 5px;
+      }
+      .container>div
+      {
+        background-color: #EEF9FF;
+      display: flex;
+       justify-content: center; 
+       align-items:center;
+      }
+      .head{
+        grid-column:1/4;
+      }
+      .main{
+        grid-column: 2/3;
+        grid-row:2/3;
+      }
+      .menu{
+        grid-column: 1/2;
+        grid-row:2/4;
+        
+      }
+      .footer{
+        grid-column:2/4;
+        grid-row: 3/4;
+      }
+      .right{
+        grid-column:3/4;
+        grid-row: 2/3;
+        
+      }
+      
+    </style>
+     <div class="container">
+       <div class="head">Header</div>
+       <div class="menu">menu</div>
+       <div class="main">main</div>
+       <div class="right">right</div>
+       <div class="footer">footer</div>
+     </div>
+  </body>
+</html>

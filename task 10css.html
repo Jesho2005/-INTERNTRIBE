@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>jesho</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 2fr 1fr 3fr 3fr 1fr;
+            width: 250px;
+            height: 250px;
+            background-color:#AFAFAF;
+            
+
+        }
+        .container>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .head{
+          color:white;
+          background-color:#323232;
+         grid-column: 1/4;
+        }
+        .nav{
+          color:white;
+          background-color:#878787;
+          grid-column: 1/4;
+          margin-top: 3px;
+          margin-bottom: 5px;
+        }
+        .show{
+           margin-left:5px ;
+           margin-right:5px;
+           margin-top:5px;
+           margin-bottom:5px;
+          color:white;
+          background-color:#505050;
+          grid-column: 1/4;
+          grid-row: 3/4;
+         
+        }
+        
+        .c1{
+          grid-column: 1/2;
+          grid-row:4/5;
+           margin-left:5px ;
+           margin-right:15px;
+           margin-top:10px;
+           margin-bottom:10px;
+          background-color: white;
+
+        }
+        .c2{
+          grid-column: 2/3;
+          grid-row:4/5;
+           margin-left:5px ;
+           margin-right:15px;
+           margin-top:10px;
+           margin-bottom:10px;
+           background-color: white;
+
+        }
+        .c3{
+          grid-column: 3/4;
+          grid-row:4/5;
+           margin-left:5px ;
+           margin-right:5px;
+           margin-top:10px;
+           margin-bottom:10px;
+           background-color: white;
+        }
+        
+        .foot{
+          color:white;
+          background-color:#505050;
+          grid-column: 1/4;
+        }
+      
+        
+        </style>
+    <div class="container">
+       
+        <div class="head">Header</div>
+        <div class="nav">Navigation bar</div>
+        <div class="show">Slideshow</div>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="foot">Footer</div>
+        
+    </div>
+</body>
+</html>
