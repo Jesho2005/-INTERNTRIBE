@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jesho</title>
+  </head>
+  <body>
+      <script>
+        let sum=0;
+        let n;
+        do{
+          n=Number(prompt("enter the numbers"));
+          sum=sum+n;
+        }
+        while(n!=0);{
+        console.log("the sum is:",sum);
+        }
+        
+        let age=prompt('enter the age:');
+if(age<16){
+    console.log("you can't drive but not vote");
+}
+else if(age>=16&&age<=17){
+    console.log("you can drive but not vote");
+}
+else if(age>=18&&age<=24){
+    console.log("you can vote but not rent a car");
+}
+else{
+    console.log("you can do pretty much  anything");
+}
+      </script>
+  </body>
+</html>
