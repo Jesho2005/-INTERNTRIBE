@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input onchange="btnclick()" type="text" id="te">
+   <h1 id="inp"></h1>
+<script>
+    const te=document.getElementById("te");
+    const inp=document.getElementById("inp");
+    function btnclick(){
+        inp.innerHTML="input changed!:[value]";
+        inp.innerHTML=te.value;
+       inp.value='';
+    }
+</script>
+</body>
+</html>
